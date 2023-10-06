@@ -31,6 +31,13 @@
                             <label value="&zotero.scihub.automatic_pdf_download;" />
                             <checkbox id="id-zoteroscihub-automatic-pdf-download"
                                       preference="pref-zoteroscihub-automatic-pdf-download" />
+                                      
+                        </row>
+                        <row>
+                            <label value="&zotero.continue_donwloads;" />
+                            <checkbox id="id-continue_donwloads"
+                                      preference="pref-continue_donwloads" />
+                                      
                         </row>
                         <row>
                             <label

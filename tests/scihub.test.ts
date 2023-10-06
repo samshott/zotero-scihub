@@ -107,15 +107,15 @@ describe('Scihub test', () => {
       expect(attachmentSpy.calledOnce).to.be.true
     })
 
-    it('captcha redirects user and stops execution', async () => {
+    it('captcha does not stop execution', async () => {
       const launchURLSpy = spy(Zotero, 'launchURL')
       const alertStub = stub(globalThis, 'alert')
 
-      // captachItem has weird response
+      // captchaItem has weird response
       await Zotero.Scihub.updateItems([captchaItem, regularItem1])
 
-      expect(launchURLSpy.calledOnce).to.be.true
-      expect(attachmentSpy.notCalled).to.be.true
+      expect(launchURLSpy.calledOnce).to.be.true // Assuming you still want to check if launchURL is called for captcha
+      expect(attachmentSpy.called).to.be.true // Change this to true if attachments should now be made
 
       launchURLSpy.restore()
       alertStub.restore()

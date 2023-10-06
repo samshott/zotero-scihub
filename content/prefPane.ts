@@ -6,6 +6,9 @@ class PrefPane {
     const automaticPdfDownloadCheckbox = document.getElementById('id-zoteroscihub-automatic-pdf-download') as HTMLInputElement
     automaticPdfDownloadCheckbox.checked = Zotero.Scihub.isAutomaticPdfDownload()
 
+    // const automaticPdfDownloadCheckbox = document.getElementById('id-continue_donwloads') as HTMLInputElement
+    // automaticPdfDownloadCheckbox.checked = Zotero.Scihub.
+
     const sciHubUrlInput = document.getElementById('id-zoteroscihub-scihub-url') as HTMLInputElement
     sciHubUrlInput.value = Zotero.Scihub.getBaseScihubUrl()
   }

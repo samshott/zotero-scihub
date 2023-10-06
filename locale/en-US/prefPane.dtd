@@ -1,3 +1,4 @@
 <!ENTITY zotero.scihub.automatic_pdf_download "Automatic PDF Download">
+<!ENTITY zotero.scihub.continue_donwloads "Continue bulk downloading pdfs if file is not found. Do not pull up SciHub URL">
 <!ENTITY zotero.scihub.scihub_url "Scihub URL:">
 <!ENTITY zotero.scihub.title "Zotero Scihub">
