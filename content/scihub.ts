@@ -107,7 +107,7 @@ class Scihub {
             You will be redirected to the scihub page.\n\
             Restart fetching process manually.\n\
             Error message: ${error}`)
-          Zotero.launchURL(scihubUrl.href) // add a checkmark in preferences for this
+          // Zotero.launchURL(scihubUrl.href) // add a checkmark in preferences for this
           continue // add a checkmark in preferences for this
         }
       }
